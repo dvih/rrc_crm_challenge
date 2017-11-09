@@ -1,0 +1,43 @@
+.navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #EEE;
+  overflow: visible;
+
+  li {
+    a {
+      display: block;
+      text-align: center;
+      font-size: 1.3em;
+      padding: 14px 16px;
+      text-decoration: none;
+
+      &:hover {
+         background-color: #CCC;
+      }
+    }
+  }
+}
+
+.customer {
+  display: inline-block;
+  border: 1px solid #BBB;
+  padding:10px;
+  margin: 10px;
+  height: 360px;
+  vertical-align: top;
+  width: fit-content;
+
+  h3, .province_tag {
+    font-weight:bold;
+    margin-top: 5px;
+  }
+
+  .customer_detail {
+    display: block;
+    margin-top:20px;
+    margin-bottom:10px;
+  }
+}

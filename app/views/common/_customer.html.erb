@@ -1,9 +1,9 @@
-<%# Initial setup of a partial (before generating controller and view..?) %>
-
-<div class="customer">
-  <h3><%=customer.name%></h3>
-  <p class="customer_image"><%=image_tag customer.image%></p>
-  <p class="customer_detail"><b>Province:</b> <%=customer.province%></p>
-  <p class="customer_detail"><%=customer.phone_number%></p>
-  <p class="customer_detail"><%=customer.email_address%></p>
-</div>
+<%@customers.each do |customer| %>
+  <div class="customer">
+    <h3><%=customer.full_name%></h3>
+    <p class="customer_image"><%=image_tag customer.image%></p>
+    <p class="customer_detail"><span class = "province_tag">Province:</span> <%#customer.province%></p>
+    <p class="customer_detail"><%=customer.phone_number%></p>
+    <p class="customer_detail"><%=customer.email_address%></p>
+  </div>
+<%end%>
